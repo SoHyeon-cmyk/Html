@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블요소</title>
+  </head>
+  <body>
+    <ul>
+      <li>table태그: 웹 사이트 표를 만들 때 사용</li>
+      <li>tr태그: table row (표의 가로줄)</li>
+      <li>th태그: table head (부수적인 정보를 표현)</li>
+      <li>td태그: table date (메인 데이터)</li>
+    </ul>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>교시/요일</th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1교시</th>
+          <td>물리</td>
+          <td>화학</td>
+          <td>지구</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>2교시</th>
+          <td>국어</td>
+          <td>영어</td>
+          <td>미술</td>
+        </tr>
+      </tfoot>
+    </table>
+<br>
+    <table border="1">
+      <tr>
+        <th rowspan="2">구분</th>
+        <th colspan="2">1학년</th>
+        <th colspan="2">2학년</th>
+      </tr>
+      <tr>
+        <th>홍길동</th>
+        <th>전지현</th>
+        <th>김철수</th>
+        <th>김영희</th>
+      </tr>
+      <tr>
+        <th>전공필수</th>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <th>전공선택</th>
+        <td>60</td>
+        <td>50</td>
+        <td>40</td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

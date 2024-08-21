@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비디오_오디오</title>
+</head>
+<body>
+  <h1>video요소</h1>
+  <p>영상파일을 표시합니다</p>
+  <!-- 브라우적저가 모든 파일 형식을 지원하는 것은 아니므로 표준형식의 비디오 파일을 사용 -->
+   <video src="travel.mp4" muted controls width="360" height="250" poster="thumb.jpg">sample-video</video>
+
+   <h1>audio요소</h1>
+   <p>오디오파일을 표시</p>
+   <audio src="bass.mp3" controls preload="none"></audio>
+   <p>bass</p>
+
+   <h1>source요소</h1>
+   <p>이 요소를 사용하면 하나의 audio, video요소에 여러개의 미디어소스를 표시할 수 있다.</p>
+   <audio controls preload="none">
+    <source src="bass.mp3" type="bass.mp3">
+   <source src="bass.ogg" type="audio/ogg">
+   <p>bass</p>
+  </audio>
+</body>
+</html>
