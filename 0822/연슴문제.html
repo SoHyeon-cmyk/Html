@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습문제</title>
+  </head>
+  <body>
+    <form>
+      <h2>직원 정보 기재</h2>
+      <label for="name">성함</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="이름을 작성해 주세요."
+        required
+      />
+      <br /><br />
+      <label for="email">이메일</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="이메일을 작성해 주세요."
+        required
+      />
+      <br /><br />
+      <label for="tel">전화번호</label>
+      <input
+        type="tel"
+        name="전화번호"
+        id="tel"
+        required
+        placeholder="전화번호를 입력해 주세요."
+      />
+      <br /><br />
+      <label for="부서">부서</label>
+      <select>
+        <option>인사팀</option>
+        <option>IT팀</option>
+        <option>영업팁</option>
+        <option>마케팅팀</option>
+      </select>
+      <br /><br />
+      <input type="button" value="전송" />
+    </form>
+    <br /><br /><br />
+    <form>
+      <h2>제품주문</h2>
+      <label for="name">상품명</label>
+      <input
+        type="text"
+        name="제품이름"
+        id="goods"
+        placeholder="상품명을 정확히 기재해주세요."
+      />
+      <br /><br />
+      <label for="number">주문 개수</label>
+      <input type="number" min="0" max="100" />
+      <br /><br />
+      <label for="select">배송방법</label>
+      <select>
+        <option>표준 배송</option>
+        <option>빠른 배송</option>
+        <option>익일 배송</option>
+      </select>
+      <br /><br />
+      <input type="button" value="주문" />
+    </form>
+
+    <table>
+      <h2>제품이름2</h2>
+      <tr>
+        <th>상품명</th>
+        <td>
+          <input
+            type="text"
+            name="goods"
+            id="goods"
+            placeholder="상품명을 기재해주세요."
+          />
+        </td>
+      </tr>
+      <tr>
+        <th>주문개수</th>
+        <td>
+          <input
+            type="number"
+            name="goods count"
+            id="count"
+            min="1"
+            max="100"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th>배송방법</th>
+        <td>
+          <select name="배송방법" id="delivery">
+            <option value="">표준 배송</option>
+            <option value="">빠른 배송</option>
+            <option value="">익일 배송</option>
+          </select>
+        </td>
+      </tr>
+      <td><input type="button" value="주문" /></td>
+    </table>
+  </body>
+</html>
